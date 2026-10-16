@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krizhelle ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #75465a;
+    background: linear-gradient(135deg, #fff6fa, #ffe1ed, #fff9fc);
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(45px, 8vw, 75px);
+    color: #d76599;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #d76599;
+}
+
+.subtitle {
+    line-height: 1.8;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    background: white;
+    color: #75465a;
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px #d98bab33;
+}
+
+nav a:hover {
+    background: #ffc6dc;
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px #c86b941c;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 35%;
+    border: 7px solid #f5b8d0;
+    border-radius: 45% 45% 25px 25px;
+}
+
+p {
+    line-height: 1.9;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.hobby {
+    text-align: center;
+    text-decoration: none;
+    color: #75465a;
+    transition: 0.2s;
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+    background: #fff0f6;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+h3 {
+    color: #c85d8e;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+ul {
+    line-height: 2.2;
+}
+
+li::marker {
+    color: #d76599;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #f0c2d5;
+    padding: 13px;
+    text-align: left;
+}
+
+th {
+    background: #f5b8d0;
+}
+
+tr:nth-child(even) {
+    background: #fff2f7;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #f5b8d0, transparent);
+    margin: 35px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 650px) {
+    .profile, .hobbies, .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Krizhelle ♡</h1>
+
+    <p class="subtitle">
+        A tiny scrapbook about me, my favorite things, and all the little things that make life lovely.
+    </p>
+
+    <nav>
+        <a href="#about">About Me ♡</a>
+        <a href="#hobbies">Hobbies 🌷</a>
+        <a href="#favorites">Favorites 🎀</a>
+        <a href="#details">My Details 💗</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="card profile" id="about">
+        <div class="photo">
+            <img src="C:\Users\Alma\Downloads\ec30c8cc-9508-4955-aec7-509caa397a12" alt="Krizhelle's photograph">
+        </div>
+
+        <div>
+            <h2>Hi, I'm Krizhelle! 🌷</h2>
+
+            <p>
+                I'm a student with big dreams and a soft spot for cute things.
+                I love spending time on my hobbies, discovering new favorites,
+                and making sweet memories with the people I care about.
+                This is my little space to share a bit of who I am!
+            </p>
+        </div>
+    </section>
+
+    <div class="section-title" id="hobbies">
+        <h2>Things I Love Doing ♡</h2>
+        <p>My hobbies make ordinary days feel a little more magical ✨</p>
+    </div>
+
+    <section class="hobbies">
+
+        <a class="card hobby"
+        href="https://open.spotify.com/playlist/3BmnNTsnVHE23hgw3xp1r6"
+        target="_blank" rel="noopener noreferrer">
+            <span class="emoji">🎧</span>
+            <h3>Listening to Music</h3>
+            <p>
+                Making playlists for every mood and singing along
+                to my favorite songs.
+            </p>
+            <strong>Click to listen ♡</strong>
+        </a>
+
+        <a class="card hobby"
+        href="https://docs.google.com/document/d/1J8NkcYd6yxzMJ9itYMqEiwbrZ9fBNXkJa2BaMVDZ7TY/edit?usp=sharing"
+        target="_blank" rel="noopener noreferrer">
+            <span class="emoji">📖</span>
+            <h3>Reading &amp; Writing</h3>
+            <p>
+                Getting lost in stories, journaling thoughts,
+                and collecting little ideas.
+            </p>
+            <strong>Click to read ♡</strong>
+        </a>
+
+    </section>
+
+    <div class="section-title" id="favorites">
+        <h2>My Favorite Things 🎀</h2>
+        <p>A few little things that make me smile ♡</p>
+    </div>
+
+    <section class="columns">
+
+        <div class="card">
+            <h3>♡ My Current Favorites</h3>
+
+            <ul>
+                <li><strong>Color:</strong> Pastel pink</li>
+                <li><strong>Food:</strong> Potatoes 🥔</li>
+                <li><strong>Drink:</strong> Iced tea 🧋</li>
+                <li><strong>Singer:</strong> Taylor Swift 🎤</li>
+                <li><strong>Animal:</strong> Cats 🐈</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🌸 My Little World</h3>
+
+            <p>
+                Soft pink details, cozy playlists, stories,
+                and little moments that make life feel special. ♡
+            </p>
+
+            <p>
+                Thanks for visiting my little corner!
+            </p>
+        </div>
+
+    </section>
+
+    <div class="section-title" id="details">
+        <h2>My Little Info Card 💗</h2>
+        <p>Basic information, wrapped up in a pink bow 🎀</p>
+    </div>
+
+    <section class="card table-wrap">
+        <table>
+            <tr>
+                <th>Basic Information</th>
+                <th>My Details</th>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Zhyrene Krizhelle Molina</td>
+            </tr>
+
+            <tr>
+                <td>Grade</td>
+                <td>Grade 10</td>
+            </tr>
+
+            <tr>
+                <td>Section</td>
+                <td>Amethyst</td>
+            </tr>
+
+            <tr>
+                <td>Dream</td>
+                <td>To be a writer</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <p style="text-align:center">
+        Made with love, pink clouds, and a sprinkle of glitter ♡
+    </p>
+
+</main>
+
+<footer>
+    ♡ Thanks for visiting my little world ♡
+</footer>
+
+</body>
+</html>
