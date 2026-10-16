@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Pink Wonderland 🌸</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Dancing+Script:wght@700&display=swap');
+  
+  :root {
+    --pink: #ff8ecf;
+    --light-pink: #ffeef8;
+    --hot-pink: #ff4fb5;
+    --text: #8a2f6b;
+  }
+  
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(180deg, #fff0f7 0%, #ffd6eb 50%, #ffc2e0 100%);
+    margin: 0;
+    color: var(--text);
+    background-attachment: fixed;
+  }
+  
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    z-index: 100;
+    border-bottom: 3px dashed var(--pink);
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--hot-pink);
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  nav a:hover { background: var(--light-pink); transform: translateY(-2px); }
+  
+  /* SECTIONS */
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(255, 182, 218, 0.3);
+    border: 3px dashed var(--pink);
+  }
+  
+  h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--hot-pink);
+    text-align: center;
+  }
+  h1 { font-size: 3.5em; }
+  h2 { font-size: 2.2em; }
+  
+  [contenteditable="true"] {
+    outline: none;
+    border-radius: 12px;
+    padding: 4px 8px;
+    transition: 0.2s;
+  }
+  [contenteditable="true"]:hover, [contenteditable="true"]:focus {
+    background: var(--light-pink);
+    box-shadow: 0 0 0 3px var(--pink);
+  }
+  
+  /* BUTTONS */
+  .btn {
+    background: var(--pink);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 8px;
+    transition: 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+  }
+  .btn:hover { transform: scale(1.05) rotate(-1deg); background: var(--hot-pink); }
+  
+  /* GALLERY */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .gallery div {
+    height: 150px;
+    background: var(--light-pink);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .gallery div:hover { transform: rotate(5deg) scale(1.1); }
+  
+  /* TODO */
+  #todoList { list-style: none; padding: 0; }
+  #todoList li {
+    background: var(--light-pink);
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  #todoList li.done { text-decoration: line-through; opacity: 0.6; }
+  
+  /* FLOATING HEARTS */
+  .heart { 
+    position: fixed; 
+    font-size: 20px; 
+    pointer-events: none; 
+    animation: floatUp 3s linear forwards;
+  }
+  @keyframes floatUp {
+    to { transform: translateY(-100vh); opacity: 0; }
+  }
+  
+  footer { text-align: center; padding: 30px; opacity: 0.7; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home"> Home</a>
+  <a href="#about"> About</a>
+  <a href="#gallery">Pics</a>
+  <a href="#todo">Feedback</a>
+  <a href="#diary">Poems i write</a>
+</nav>
+
+<section id="home">
+  <h1 contenteditable="true"> Krizhelle's personal webpage</h1>
+  <p contenteditable="true">Get to know her</p>
+  <div style="text-align:center">
+    <button class="btn" onclick="makeHearts()">💖 Hearts!</button>
+    <button class="btn" onclick="changeTheme()">🎨 </button>
+    <button class="btn" onclick="alert('You\'re so cute today! 🥰')">Click Me</button>
+  </div>
+</section>
+
+<section id="about">
+  <h2 contenteditable="true">About Me 🌷</h2>
+  <p contenteditable="true">Hi! I'm Zhyrene Krizhelle MOlina. This is my webpage, get to know me!<br> Some things that you should know about me: I love writing poems, so so much (click the poems i write to view one of the poems i wrote). I also love cats, and matcha. </p>
+  <p contenteditable="true">I love taylor swift SOOOO MUCHH</p>
+</section>
+
+<section id="gallery">
+  <h2 contenteditable="true">🎀</h2>
+  <p contenteditable="true">fav emojis</p>
+  <div class="gallery" id="galleryBox">
+    <div onclick="changeEmoji(this)">🌸</div>
+    <div onclick="changeEmoji(this)">🍓</div>
+    <div onclick="changeEmoji(this)">🎀</div>
+    <div onclick="changeEmoji(this)">🦄</div>
+    <div onclick="changeEmoji(this)">🧁</div>
+    <div onclick="changeEmoji(this)">💕</div>
+  </div>
+  <div style="text-align:center; margin-top:15px">
+    <button class="btn" onclick="addGalleryItem()">+ Add Box</button>
+  </div>
+</section>
+
+<section id="todo">
+  <h2 contenteditable="true">what you wanna say abt me</h2>
+  <input type="text" id="todoInput" placeholder="Add something cute..." style="width:70%; padding:10px; border:2px solid var(--pink); border-radius:15px;">
+  <button class="btn" onclick="addTodo()">Add</button>
+  <ul id="todoList"></ul>
+</section>
+
+<section id="diary">
+  <h2 contenteditable="true">💌</h2>
+  <p contenteditable="true">01/ the poem i wrote : ) </p>
+  <p contenteditable="true">The first time I met you,
+<b>I won’t lie,
+<br> I fell for you because you were beautiful.
+<br>
+<br> Your eyes caught my attention first,
+<br> those eyes I could probably stare at for hours.
+<br> Then your smile, your laugh,
+<br>your height, your face,
+<br>even your stupid jokes
+that weren’t even that funny,
+<br>but somehow made me smile anyway.
+<br>
+<br> At first, I thought that was all it was.
+<br> I thought I just liked the way you looked,
+<br>the way you smiled,
+<br>the way you made me feel whenever you were around.
+<br>
+<br>But then I got to know you.
+<br>
+<br>And the more I did,
+<br> the more I realized there was so much more to you
+<br>than what everyone else gets to see.
+<br>
+<br> You have so much light in you.
+<br> So much love.
+<br> So much to give.
+<br>
+<br> And I noticed how you could carry yourself
+<br> even on the days when you were struggling.
+<br> You could be hurting,
+<br> you could be tired,
+<br> you could be falling apart inside,
+<br> and somehow, you still wouldn't let anyone see it.
+<br>
+<br> I don't know if you realize how strong that makes you.
+<br>
+<br>And that's when I knew
+<br>I didn't just love your face anymore.
+<br>
+<br>I loved you.
+<br>
+<br>Not the version of you that everyone sees,
+<br> not just the tall, handsome guy
+with the pretty eyes and charming smile.
+<br>
+<br>I loved the person behind all of that.
+<br>
+<br>The person who laughs.
+<br>The person who makes terrible jokes.
+<br>The person who gets tired.
+<br>The person who sometimes hurts
+<br>but keeps going anyway.
+<br>
+<br> And God knows how much I love you.
+<br>
+<br>I wish I could put it into words,
+<br>but even this isn't enough.
+<br>
+<br>Maybe you were never meant to be mine.
+<br>Maybe I wasn't enough for you.
+<br>Or maybe I was,
+<br>but you just never saw me that way.
+<br>
+<br>Maybe when you looked at me,
+<br>you never saw someone
+<br>you could spend forever with.
+<br>
+<br>And honestly,
+<br>I think I've learned to accept that.
+<br>
+<br>I'm not asking you to choose me.
+<br>I'm not asking you to love me back.
+<br>I'm not even asking you to stay.
+<br>
+<br>If anything,
+<br>I just want you to be happy.
+<br>
+<br>I want you to be free.
+<br>I want you to laugh without pretending.
+<br>I want you to love without being afraid.
+<br>I want you to find someone
+<br>who sees you the way I do—
+<br>someone who sees everything you try to hide
+<br>and loves you anyway.
+<br>
+<br>And maybe that person won't be me.
+<br>
+<br>I know that hurts.
+<br>
+<br>But if loving you means
+<br>wanting what's best for you
+<br>even when what's best for you isn't me,
+<br>then I guess I'll learn to love you that way.
+<br>
+<br>Because I loved you for your smile at first,
+<br>but I fell in love with everything underneath it.
+<br>
+<br>And even if I never get to call you mine,
+<br>I'll still be thankful
+<br>that I got to know you,
+<br>that I got to see the parts of you
+<br>that you don't show everyone,
+<br>
+<br>and that, for a while,
+<br>I got to love you.
+</p>
+  <p contenteditable="true"><span contenteditable="true"></span></p>
+  <button class="btn" onclick="makeHearts()">Save with hearts 💾</button>
+</section>
+
+<footer>
+  <p contenteditable="true">BYEBYEEE</p>
+</footer>
+
+<script>
+  // floating hearts
+  function makeHearts() {
+    for(let i=0; i<15; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = ['💖','💕','🌸','✨'][Math.floor(Math.random()*4)];
+      heart.style.left = Math.random()*100 + 'vw';
+      heart.style.top = '100vh';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 3000);
+    }
+  }
+  
+  // theme changer
+  const themes = [
+    ['#ff8ecf', '#ffeef8', '#ff4fb5'],
+    ['#ffb6da', '#fff0f5', '#ff69b4'],
+    ['#f9a8d4', '#fdf2f8', '#ec4899']
+  ];
+  let themeIndex =
