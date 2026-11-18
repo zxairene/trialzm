@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HER VOICE | Women's Rights & Feminism</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- PAGE 1: MAKEUP POUCH COVER -->
+
+  <section id="coverScreen" class="screen cover-screen">
+    <div class="cover-decoration decoration-one">✿</div>
+    <div class="cover-decoration decoration-two">♡</div>
+    <div class="cover-decoration decoration-three">✧</div>
+
+    <div class="pouch">
+      <div class="pouch-handle"></div>
+      <div class="pouch-top">
+        <span>HER VOICE</span>
+        <span>EST. 2026</span>
+      </div>
+
+      <div class="pouch-content">
+        <span class="cover-small">A SPACE FOR EVERY WOMAN</span>
+        <h1>HER<br><i>VOICE.</i></h1>
+        <p>Her rights. Her freedom. Her story.</p>
+        <div class="cover-symbol">♀</div>
+
+        <button id="openButton" class="open-button">
+          OPEN YOUR WORLD <span>↗</span>
+        </button>
+      </div>
+
+      <div class="pouch-bottom">
+        <span>WOMEN'S RIGHTS • FEMINISM • EQUALITY</span>
+      </div>
+    </div>
+
+    <p class="cover-footer">SHE IS POWERFUL. SHE IS ENOUGH. SHE IS HEARD.</p>
+  </section>
+
+
+  <!-- PAGE 2: ARCHIVE FILES -->
+
+  <section id="archiveScreen" class="screen archive-screen" hidden>
+
+    <header class="archive-header">
+      <div>
+        <span class="eyebrow">HER VOICE / PRIVATE COLLECTION</span>
+        <h1>THE <i>FILES.</i></h1>
+        <p>A collection of stories, rights, voices, and movements.</p>
+      </div>
+
+      <button id="backCover" class="back-button">← BACK</button>
+    </header>
+
+    <div class="archive-label">
+      <span>ARCHIVE COLLECTION</span>
+      <span>06 DOCUMENTS / 2026</span>
+    </div>
+
+    <div class="folder-stack">
+
+      <button class="folder folder-one" data-file="movement">
+        <span class="folder-code">CODE_001 // ARCHIVE</span>
+        <strong>THE MOVEMENT</strong>
+        <span class="folder-description">Understanding feminism</span>
+        <span class="folder-open">↗</span>
+      </button>
+
+      <button class="folder folder-two" data-file="rights">
+        <span class="folder-code">CODE_002 // RIGHTS</span>
+        <strong>HER RIGHTS</strong>
+        <span class="folder-description">Equality and freedom</span>
+        <span class="folder-open">↗</span>
+      </button>
+
+      <button class="folder folder-three" data-file="history">
+        <span class="folder-code">CODE_003 // HISTORY</span>
+        <strong>THE HISTORY</strong>
+        <span class="folder-description">A journey through time</span>
+        <span class="folder-open">↗</span>
+      </button>
+
+      <button class="folder folder-four" data-file="voices">
+        <span class="folder-code">CODE_004 // SIGNAL</span>
+        <strong>HER VOICES</strong>
+        <span class="folder-description">Women who changed the world</span>
+        <span class="folder-open">↗</span>
+      </button>
+
+      <button class="folder folder-five" data-file="action">
+        <span class="folder-code">CODE_005 // AFTER WORK</span>
+        <strong>THE REVOLUTION</strong>
+        <span class="folder-description">Be part of the change</span>
+        <span class="folder-open">↗</span>
+      </button>
+
+      <button class="folder folder-six" data-file="help">
+        <span class="folder-code">CODE_006 // SUPPORT</span>
+        <strong>FOR HER — THE HELP</strong>
+        <span class="folder-description">A safe space and helping hand</span>
+        <span class="folder-open">♡</span>
+      </button>
+
+    </div>
+
+    <footer class="archive-footer">
+      <span>HER VOICE / ARCHIVE SYSTEM</span>
+      <span>EVERY STORY DESERVES TO BE HEARD.</span>
+    </footer>
+
+  </section>
+
+
+  <!-- PAGE 3: INDIVIDUAL DASHBOARD -->
+
+  <section id="dashboardScreen" class="screen dashboard-screen" hidden>
+
+    <!-- TOP BAR -->
+
+    <header class="dashboard-header">
+
+      <div class="search-bar">
+        <span>⌕</span>
+        <input type="text" id="searchInput" placeholder="Search this collection...">
+      </div>
+
+      <button class="logo-button" id="dashboardLogo">♀</button>
+
+    </header>
+
+
+    <!-- HERO PANEL -->
+
+    <main>
+
+      <section class="hero-panel">
+
+        <div class="hero-main">
+          <span class="eyebrow">HER VOICE / WOMEN'S RIGHTS COLLECTION</span>
+
+          <h1 id="dashboardTitle">THE MOVEMENT</h1>
+
+          <p id="dashboardSubtitle">HER STORY. HER POWER.</p>
+
+          <div class="hero-symbol" id="heroSymbol">♀</div>
+        </div>
+
+        <div class="hero-info">
+          <span class="info-label">FEATURED DOCUMENT / 001</span>
+          <h2 id="heroInfoTitle">WHAT IS FEMINISM?</h2>
+          <p id="heroInfoText"></p>
+
+          <div class="hero-actions">
+            <button id="readButton" class="soft-button">
+              READ MORE ↗
+            </button>
+
+            <button id="exploreButton" class="soft-button">
+              EXPLORE FILES →
+            </button>
+
+            <button id="weLoveYouButton" class="soft-button" hidden>
+              WE LOVE YOU ♡
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- NAVIGATION -->
+
+      <nav class="dashboard-nav">
+
+        <button data-section="overview" title="Home">⌂</button>
+        <button data-section="topics" title="Collections">▦</button>
+        <button data-section="about" title="About">✿</button>
+        <button data-section="action" title="Support">♡</button>
+
+      </nav>
+
+
+      <!-- INFORMATION PANEL -->
+
+      <section class="information-panel">
+
+        <div class="section-heading">
+          <span id="informationLabel">THE MOVEMENT / INFORMATION</span>
+          <span>✧</span>
+        </div>
+
+        <div class="information-grid">
+
+          <article class="information-card">
+            <span class="mini-label">01 / OVERVIEW</span>
+            <p id="infoLeft"></p>
+            <button id="readButtonTwo" class="text-button">
+              DISCOVER MORE ↗
+            </button>
+          </article>
+
+          <article class="information-card second-card">
+            <span class="mini-label">02 / PERSPECTIVE</span>
+            <p id="infoRight"></p>
+            <button id="scrollButton" class="text-button">
+              EXPLORE BELOW ↓
+            </button>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- COLLECTION CARDS -->
+
+      <section class="collection-panel" id="collectionPanel">
+
+        <div class="collection-heading">
+          <div>
+            <span class="eyebrow">EXPLORE THE COLLECTION</span>
+            <h2>DISCOVER <i>MORE.</i></h2>
+          </div>
+
+          <span class="collection-count">CLICK A FILE ↗</span>
+        </div>
+
+        <div class="collection-grid" id="collectionGrid"></div>
+
+      </section>
+
+
+      <!-- SELECTED INFORMATION -->
+
+      <section class="selected-detail" id="selectedDetail" hidden>
+
+        <div class="detail-top">
+          <span>DOCUMENT / FULL DETAILS</span>
+          <button id="closeDetail">✕</button>
+        </div>
+
+        <h2 id="detailTitle"></h2>
+        <p id="detailText"></p>
+
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <footer class="dashboard-footer">
+        <h2>HER VOICE.</h2>
+        <p>Her story matters. Her rights matter. Her voice matters.</p>
+        <span>MADE WITH PURPOSE ♡</span>
+      </footer>
+
+    </main>
+
+    <button id="backArchive" class="floating-back">
+      ← BACK TO FILES
+    </button>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
